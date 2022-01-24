@@ -7,75 +7,131 @@
     <title>ПастилаНеЗефир</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
   </head>
-  <body>
-    <div id="header">
-      <h1>Пастила на любой вкус</h1>
-      <ul id="navigation">
-        <li class="selected">
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="about.html">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="gallery.html">Каталог</a>
-        </li>
-        <li>
-          <a href="contact.html">Контакты</a>
-        </li>
-      </ul>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title">Пастила на любой вкус</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item-link nav__item-link_selected" href="index.html"
+              >Главная</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="about.html">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="gallery.html">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="featured">
+        <img class="featured__img" src="images/main3.jpg" alt="" />
+        <div class="featured__div">
+          <h2 class="featured__header">Преимущества</h2>
+          <p><span class="featured__span">Полезно</span></p>
+          <p><span class="featured__span">Натурально</span></p>
+          <p><span class="featured__span">Без добавок</span></p>
+          <p>
+            <a class="featured__delivery" href="dostavka.html" class="more"
+              >Купить</a
+            >
+          </p>
+        </div>
+
+        <ul class="categories">
+          <li class="categories__item">
+            <a class="categories__link" href="pastila.html">
+              <img
+                class="categories__link-img"
+                src="images/pastila1.jpg"
+                alt="Пастила"
+              />
+              <span class="categories__link-span">Пастила</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="frips.html">
+              <img class="categories__link-img" src="images/mix3.jpg" alt="" />
+              <span class="categories__link-span">Фрипсы</span>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="sets.html">
+              <img class="categories__link-img" src="images/set1.jpg" alt="" />
+              <span class="categories__link-span">Наборы</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="slider">
+      <button class="slider__button-left" onclick="slider.left();">&lt;</button>
+      <div id="slider__src"></div>
+      <button class="slider__button-right" onclick="slider.right();">
+        &gt;
+      </button>
     </div>
 
-    <div id="body">
-      <div id="featured">
-        <img src="images/main.jpg" alt="" />
-        <div>
-          <h2>Преимущества</h2>
-          <p><span>Полезно</span></p>
-          <p><span>Натурально</span></p>
-          <p><span>Без добавок</span></p>
-          <p><a href="dostavka.html" class="more">Купить</a></p>
-        </div>
-      </div>
-      <ul>
-        <li>
-          <a href="pastila.html">
-            <img src="images/pastila1.jpg" alt="Пастила" />
-            <br />Пастила
-          </a>
-        </li>
-        <li>
-          <a href="frips.html">
-            <img src="images/pastila1.jpg" alt="" />
-            <br />Фрипсы
-          </a>
-        </li>
-        <li>
-          <a href="sets.html">
-            <img src="images/pastila1.jpg" alt="" />
-            <br />Наборы
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div id="footer">
-      <div>
-        <p>&copy; 2022 Магазин Домашней пастилы и фрипсов</p>
-        <ul>
-          <li>
-            <a href="" id="instagram">instagram</a>
+    <footer class="footer">
+      <div class="footer__div">
+        <p class="footer__text">
+          &copy; 2022 Магазин Домашней пастилы и фрипсов
+        </p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__item-link" href="" id="instagram">instagram</a>
           </li>
-          <li>
-            <a href="" id="facebook">facebook</a>
+          <li class="footer__item">
+            <a class="footer__item-link" href="" id="facebook">facebook</a>
           </li>
-          <li>
-            <a href="" id="vkontakte">vkontakte</a>
+          <li class="footer__item">
+            <a class="footer__item-link" href="" id="vkontakte">vkontakte</a>
           </li>
-          <li>
-            <a href="" id="whatsup">whatsup</a>
+          <li class="footer__item">
+            <a class="footer__item-link" href="" id="whatsup">whatsup</a>
           </li>
         </ul>
       </div>
-    </div>
+    </footer>
+    <script>
+      let slider = {
+        slides: ['set1', 'set2', 'set3', 'set4', 'set5'],
+        frame: 0,
+        set: function (image) {
+          document.getElementById(
+            'slider__src'
+          ).style.backgroundImage = `url(images/${image}.jpg)`;
+        },
+        init: function () {
+          this.set(this.slides[this.frame]);
+        },
+        left: function () {
+          this.frame--;
+          if (this.frame < 0) this.frame = this.slides.length - 1;
+          this.set(this.slides[this.frame]);
+        },
+        right: function () {
+          this.frame++;
+          if (this.frame == this.slides.length) this.frame = 0;
+          this.set(this.slides[this.frame]);
+        },
+      };
+
+      window.onload = function () {
+        slider.init();
+        setInterval(function () {
+          slider.right();
+        }, 5000);
+      };
+    </script>
+    <!-- <script src="/scripts/slider.js"></script> -->
   </body>
 </html>

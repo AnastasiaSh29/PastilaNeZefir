@@ -20,7 +20,7 @@
       format('svg');
 }
 
-body {
+.body {
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -46,13 +46,14 @@ p a:hover {
   color: #898989;
 }
 
-#header {
+.header {
   margin: 0 auto;
   padding: 44px 0 50px;
   text-align: center;
   width: 960px;
 }
-#header a.logo {
+
+/* #header a.logo {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -64,19 +65,19 @@ p a:hover {
   display: block;
   margin: 0;
   padding: 0;
-}
+} */
 
-#header ul {
+.nav__list {
   margin: 0;
   padding: 56px 0 0;
 }
-#header ul li {
+.nav__item {
   margin: 0;
   padding: 0 19px;
   display: inline;
   list-style: none;
 }
-#header ul li a {
+.nav__item-link {
   color: #252525;
   margin: 0;
   padding: 0 0 3px;
@@ -86,21 +87,23 @@ p a:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
-#header ul li a:hover,
-#header ul li.selected a {
+.nav__item-link:hover {
   color: #0ba39c;
 }
-#body {
+.nav__item-link_selected {
+  color: #0ba39c;
+}
+.main {
   margin: 0;
   padding: 0 0 30px;
   text-align: center;
 }
-#body h1 {
-  color: #fff;
+
+.header__title {
+  color: #252525;
   margin: 0;
   padding: 0;
   display: inline;
-  font-family: poller_oneregular;
   font-size: 35px;
   font-weight: normal;
   text-decoration: none;
@@ -210,41 +213,41 @@ p a:hover {
   color: #252525;
   border: 2px solid #252525;
 }
-#body #featured {
+
+.featured {
   margin: 0 0 13px;
   padding: 0;
   position: relative;
   width: 100%;
 }
-#body #featured img {
+.featured__img {
   border: 0;
   display: block;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-#body #featured div {
-  left: 50%;
+.featured__div {
+  left: 60%;
   margin-left: -420px;
-  margin-top: -171px;
+  margin-top: -350px;
   padding: 0 0 0 470px;
   position: absolute;
   top: 50%;
   text-align: left;
   width: 490px;
 }
-#body #featured div h2 {
-  background: #abf;
+.featured__header {
+  background: #1fc3bc;
   color: #000;
   margin: 0 0 18px;
   padding: 23px 27px 20px;
   display: inline-block;
-  font-family: poller_oneregular;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   text-transform: uppercase;
 }
-#body #featured div span {
+.featured__span {
   background: #252525;
   color: #fff;
   margin: 7px 0;
@@ -252,7 +255,7 @@ p a:hover {
   display: inline-block;
   font-size: 20px;
 }
-#body #featured div a {
+.featured__delivery {
   background: #0ba39c;
   color: #fff;
   display: inline-block;
@@ -263,53 +266,54 @@ p a:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
-#body #featured div a:hover {
+.featured__delivery:hover {
   background: #1fc3bc;
 }
-#body > ul {
+.categories {
   margin: 0 auto;
   padding: 24px 0 0;
   width: 960px;
   overflow: hidden;
 }
-#body > ul li {
+.categories__item {
   display: block;
   float: left;
   margin: 0 10px 20px;
   padding: 0;
   width: 300px;
 }
-#body > ul li a {
+.categories__link {
   color: #000;
   margin: 0;
   padding: 0;
   display: block;
-  font-family: poller_oneregular;
   font-size: 20px;
   font-weight: normal;
   text-transform: uppercase;
   text-align: left;
   text-decoration: none;
 }
-#body > ul li a img {
-  border: 2px solid #1a1a1a;
+.categories__link-img {
+  border: 3px solid #1fc3bc;
+  border-radius: 130px;
   display: block;
-  margin: 20px;
+  margin: 20px auto;
   padding: 0;
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.5s ease-in-out;
-  max-width: 150px;
+  max-width: 230px;
 }
 
-#body > ul li a:hover img {
-  opacity: 1;
+.categories__link-img:hover {
+  opacity: 0.8;
 }
-#body > ul li a span {
+.categories__link-span {
   display: block;
   margin: 0;
   padding: 33px 0 0;
+  text-align: center;
 }
-#body form {
+/* #body form {
   width: 620px;
   margin: 0 auto;
   padding: 24px 0 0;
@@ -345,26 +349,26 @@ p a:hover {
   background: #fff;
   color: #252522;
   cursor: pointer;
-}
-#footer {
+} */
+.footer {
   background: #252525;
   margin: 0;
   padding: 36px 0 42px;
 }
-#footer div {
+.footer__div {
   width: 960px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
 }
-#footer div p {
+.footer__text {
   color: #fff;
   float: left;
   line-height: 44px;
   margin: 0 0 0 10px;
   padding: 0;
 }
-#footer div ul {
+.footer__list {
   display: block;
   float: right;
   margin: 0;
@@ -372,7 +376,7 @@ p a:hover {
   padding: 0;
   width: 256px;
 }
-#footer div ul li {
+.footer__item {
   display: block;
   float: left;
   margin: 0 10px;
@@ -380,7 +384,7 @@ p a:hover {
   padding: 0;
   width: 44px;
 }
-#footer div ul li a {
+.footer__item-link {
   background: url(../images/icons.jpg) no-repeat 0 0;
   display: block;
   height: 44px;
@@ -389,32 +393,80 @@ p a:hover {
   width: 44px;
   text-indent: -99999px;
 }
-#footer div ul li #instagram {
+#instagram {
   background-position: 0 0;
   color: #fff;
 }
-#footer div ul li #instagram:hover {
+#instagram:hover {
   background-position: -44px 0;
 }
-#footer div ul li #facebook {
+#facebook {
   background-position: 0 -44px;
 }
-#footer div ul li #facebook:hover {
+#facebook:hover {
   background-position: -44px -44px;
 }
-#footer div ul li #vkontakte {
+#vkontakte {
   background-position: 0 -88px;
 }
-#footer div ul li #vkontakte:hover {
+#vkontakte:hover {
   background-position: -44px -88px;
 }
-#footer div ul li #whatsup {
+#whatsup {
   background-position: 0 -132px;
 }
-#footer div ul li #whatsup:hover {
+#whatsup:hover {
   background-position: -44px -132px;
 }
 
 .pastila__img {
   max-width: 200px;
+}
+
+/***SLIDER***/
+
+.slider {
+  position: relative;
+  margin: 100px auto;
+  padding: 5px;
+  width: 660px;
+  height: 360px;
+  background-color: #f5b4bd;
+  border: 5px solid #e16801;
+  border-radius: 15px;
+}
+#slider__src {
+  margin: 20px auto;
+  margin-top: 20px;
+  width: 600px;
+  height: 320px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 50%;
+  border-radius: 170px;
+}
+
+.slider__button-left {
+  position: absolute;
+  top: 150px;
+  width: 25px;
+  height: 70px;
+  font: 12pt arial, tahoma, sans-serif;
+  text-align: center;
+  left: 5px;
+  background-color: #e16801;
+  border: none;
+}
+.slider__button-right {
+  position: absolute;
+  top: 150px;
+  width: 25px;
+  height: 70px;
+  font: 12pt arial, tahoma, sans-serif;
+  text-align: center;
+  right: 5px;
+  background-color: #e16801;
+  border: none;
 }
