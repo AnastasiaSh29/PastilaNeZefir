@@ -276,6 +276,7 @@ p a:hover {
   overflow: hidden;
 }
 .categories__item {
+  position: relative;
   display: block;
   float: left;
   margin: 0 10px 20px;
@@ -469,4 +470,32 @@ p a:hover {
   right: 5px;
   background-color: #e16801;
   border: none;
+}
+
+/***ToolTip**/
+#tt {
+  background-color: #ffd;
+  position: absolute;
+  display: block;
+  padding: 10px;
+  border: solid #089dcb;
+  border-width: 1px;
+  box-shadow: 1px 1px 2px #888888;
+  border-radius: 10px 10px 10px 0;
+  -webkit-border-radius: 10px 10px 10px 0;
+  -moz-border-radius: 10px 10px 10px 0;
+  -webkit-box-shadow: 1px 1px 2px #888888;
+  -moz-box-shadow: 1px 1px 2px #888888;
+}
+
+canvas.tip {
+  position: absolute;
+  z-index: 99999;
+  border: 1px solid #e16801;
+  padding: 3px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color: white;
 }
