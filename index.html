@@ -10,21 +10,45 @@
   <body class="body">
     <header class="header">
       <h1 class="header__title">Пастила на любой вкус</h1>
+
+      <!-- Навигация -->
       <nav class="nav">
-        <ul class="nav__list">
+        <ul class="nav__block">
           <li class="nav__item">
-            <a class="nav__item-link nav__item-link_selected" href="index.html"
-              >Главная</a
-            >
+            <span class="nav__item-span">Каталог</span>
+            <ul class="nav__submenu">
+              <li>
+                <a href="/pastila.html" class="nav__item-link">Пастила</a>
+              </li>
+              <li><a href="#" class="nav__item-link">Фрипсы</a></li>
+              <li><a href="#" class="nav__item-link">Наборы</a></li>
+            </ul>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="about.html">Доставка и оплата</a>
+            <span class="nav__item-span">Доставка и оплата</span>
+            <ul class="nav__submenu">
+              <li><a href="#" class="nav__item-link">Способы оплаты</a></li>
+              <li><a href="#" class="nav__item-link">Способы доставки</a></li>
+              <li><a href="#" class="nav__item-link">Гарантии</a></li>
+            </ul>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="gallery.html">Каталог</a>
+            <span class="nav__item-span">Контакты</span>
+            <ul class="nav__submenu">
+              <li><a href="#" class="nav__item-link">Обратная связь</a></li>
+
+              <li>
+                <a href="#" class="nav__item-link">Адрес и карта проезда</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="contact.html">Контакты</a>
+            <span class="nav__item-span">Профиль</span>
+            <ul class="nav__submenu">
+              <li><a href="#" class="nav__item-link">Мой профиль</a></li>
+              <li><a href="#" class="nav__item-link">Мои заказы</a></li>
+              <li><a href="#" class="nav__item-link">Корзина</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -151,6 +175,6 @@
 
     <!-- Подсказка на js -->
     <!-- <script src="/scripts/tips.js"></script> -->
-    <script></script>
+    <script src="/scripts/menu.js"></script>
   </body>
 </html>
