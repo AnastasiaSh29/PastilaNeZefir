@@ -1,0 +1,8 @@
+.footer__item {
+  display: block;
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+  padding: 0;
+  width: 44px;
+}

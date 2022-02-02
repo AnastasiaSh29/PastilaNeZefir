@@ -1,0 +1,7 @@
+.nav__block {
+  margin: 0;
+  padding: 56px 0 0;
+  /* width: 200px; */
+  display: flex;
+  justify-content: space-evenly;
+}

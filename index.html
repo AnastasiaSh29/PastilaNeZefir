@@ -7,7 +7,7 @@
     <title>ПастилаНеЗефир</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
   </head>
-  <body class="body">
+  <body class="body root">
     <header class="header">
       <h1 class="header__title">Пастила на любой вкус</h1>
 
@@ -63,9 +63,8 @@
           <p><span class="featured__span">Натурально</span></p>
           <p><span class="featured__span">Без добавок</span></p>
           <p>
-            <a class="featured__delivery" href="dostavka.html" class="more"
-              >Купить</a
-            >
+            <!-- <a class="featured__delivery" href="dostavka.html" class="more">Купить</a> -->
+            <button class="featured__buyButton" type="button">Купить</button>
           </p>
         </div>
 
@@ -140,6 +139,89 @@
       </div>
     </footer>
 
+    <!-- popups-->
+    <section class="popup popup-purchase">
+      <form class="popup__form" name="form" novalidate>
+        <button class="popup__btn-close" type="button"></button>
+        <h2 class="popup__header">Форма заказа</h2>
+
+        <input
+          id="input-name"
+          class="popup__input input-name"
+          name="name"
+          type="text"
+          placeholder="Имя"
+          minlength="2"
+          maxlength="40"
+          autocomplete="off"
+          required
+        />
+        <label class="label">
+          <span
+            id="input-name-error"
+            class="error label__span label__span_order"
+          ></span>
+        </label>
+
+        <input
+          id="input-email"
+          class="popup__input input-email"
+          name="email"
+          type="text"
+          placeholder="E-mail"
+          minlength="2"
+          maxlength="60"
+          autocomplete="off"
+          required
+        />
+        <label class="label">
+          <span
+            id="input-email-error"
+            class="error label__span label__span_popup-order"
+          ></span>
+        </label>
+
+        <input
+          id="input-telephone"
+          class="popup__input input-telephone"
+          name="telephone"
+          type="text"
+          placeholder="Контактный телефон"
+          minlength="2"
+          maxlength="200"
+          autocomplete="off"
+          required
+        />
+        <label class="label">
+          <span
+            id="input-telephone-error"
+            class="error label__span label__span_popup-order"
+          ></span>
+        </label>
+        <input
+          id="input-adres"
+          class="popup__input input-adres"
+          name="adres"
+          type="text"
+          placeholder="Адрес доставки"
+          minlength="2"
+          maxlength="200"
+          autocomplete="off"
+          required
+        />
+        <label class="label">
+          <span
+            id="input-adres-error"
+            class="error label__span label__span_popup-order"
+          ></span>
+        </label>
+        <!-- <textarea></textarea> -->
+        <button class="popup__btn-submit popup-order__btn-submit" type="submit">
+          Отправить
+        </button>
+      </form>
+    </section>
+
     <!-- Slider -->
     <!-- <script>
       let slider = {
@@ -176,5 +258,6 @@
     <!-- Подсказка на js -->
     <!-- <script src="/scripts/tips.js"></script> -->
     <script src="/scripts/menu.js"></script>
+    <script src="/scripts/popup.js"></script>
   </body>
 </html>

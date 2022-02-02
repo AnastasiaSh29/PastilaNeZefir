@@ -1,0 +1,8 @@
+.nav__submenu {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  display: none;
+  position: absolute;
+  width: 150px;
+}
