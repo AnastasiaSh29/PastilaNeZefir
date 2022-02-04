@@ -1,11 +1,13 @@
 /* кнопка открывает попап*/
 const buyButton = document.querySelector('.featured__buyButton');
-/*затемнение на попап */
+/* затемнение на попап */
 const popup = document.querySelectorAll('.popup');
-const popupForm = document.querySelector('.popup__form');
+
+const formPurchase = document.querySelector('.popup__form-purchase');
+
 /* попап-purchase*/
 const popupPurchase = document.querySelector('.popup-purchase');
-/*крестик закрытия попап-общий*/
+/* крестик закрытия попап-общий*/
 const popupBtnClose = document.querySelector('.popup__btn-close');
 /* кнопка submit попапа-профайл*/
 const popupBtnSubmit = document.querySelector('.popup__btn-submit');
@@ -46,13 +48,18 @@ function keyHandler(evt) {
 
 buyButton.addEventListener('click', function () {
   openPopup(popupPurchase);
+  formPurchase.reset();
+  enableValidation(validationConfig);
+  checkError(popupPurchase, validationConfig);
 });
-/* закрытие попап */
+
 popupBtnClose.addEventListener('click', function () {
+  /* закрытие попап */
   closePopup(popupPurchase);
 });
-/*временная функция */
-popupBtnSubmit.addEventListener('click', function (evt) {
+
+formPurchase.addEventListener('submit', (evt) => {
+  /*временная функция */
   evt.preventDefault();
   closePopup(popupPurchase);
 });

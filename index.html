@@ -141,7 +141,7 @@
 
     <!-- popups-->
     <section class="popup popup-purchase">
-      <form class="popup__form" name="form" novalidate>
+      <form class="popup__form popup__form-purchase" name="form" novalidate>
         <button class="popup__btn-close" type="button"></button>
         <h2 class="popup__header">Форма заказа</h2>
 
@@ -167,7 +167,7 @@
           id="input-email"
           class="popup__input input-email"
           name="email"
-          type="text"
+          type="email"
           placeholder="E-mail"
           minlength="2"
           maxlength="60"
@@ -185,10 +185,11 @@
           id="input-telephone"
           class="popup__input input-telephone"
           name="telephone"
-          type="text"
+          type="tel"
           placeholder="Контактный телефон"
-          minlength="2"
-          maxlength="200"
+          size="20"
+          minlength="9"
+          maxlength="14"
           autocomplete="off"
           required
         />
@@ -223,41 +224,12 @@
     </section>
 
     <!-- Slider -->
-    <!-- <script>
-      let slider = {
-        slides: ['set1', 'set2', 'set3', 'set4', 'set5'],
-        frame: 0,
-        set: function (image) {
-          document.getElementById(
-            'slider__src'
-          ).style.backgroundImage = `url(images/${image}.jpg)`;
-        },
-        init: function () {
-          this.set(this.slides[this.frame]);
-        },
-        left: function () {
-          this.frame--;
-          if (this.frame < 0) this.frame = this.slides.length - 1;
-          this.set(this.slides[this.frame]);
-        },
-        right: function () {
-          this.frame++;
-          if (this.frame == this.slides.length) this.frame = 0;
-          this.set(this.slides[this.frame]);
-        },
-      };
-
-      window.onload = function () {
-        slider.init();
-        setInterval(function () {
-          slider.right();
-        }, 5000);
-      };
-    </script> -->
-
+    <!-- <script></script> -->
     <!-- Подсказка на js -->
     <!-- <script src="/scripts/tips.js"></script> -->
+
     <script src="/scripts/menu.js"></script>
     <script src="/scripts/popup.js"></script>
+    <script src="/scripts/validate.js"></script>
   </body>
 </html>
