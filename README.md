@@ -7,7 +7,7 @@
 ## О сайте
 
 PastilaNeZefir — это интерактивный интернет-магазин, на котором вы можете просмотреть товар, оформить заказ и познакомиться с компанией по производству домашней пастилы.
-[Cсылка на проект "PastilaNeZefir"](https://anastasiash29.github.io/PastilaNeZefir/)
+[Cсылка на проект "PastilaNeZefir"](https://anastasiash29.github.io/PastilaNeZefir/index.html)
 
 ---
 
