@@ -1,0 +1,5 @@
+.slider__block {
+  display: flex;
+  background-color: yellow;
+  transition: 0.2s;
+}

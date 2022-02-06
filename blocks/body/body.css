@@ -1,0 +1,11 @@
+.body {
+  background: #fff;
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  min-width: 960px;
+  padding: 0;
+  color: #252525;
+}

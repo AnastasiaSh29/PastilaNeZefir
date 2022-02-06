@@ -1,0 +1,15 @@
+.slider__button-prev {
+  position: absolute;
+  right: 125px;
+  top: 60px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+.slider__button-prev:hover {
+  background: #82cac7;
+  cursor: pointer;
+}

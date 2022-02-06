@@ -1,0 +1,19 @@
+.content__buyButton {
+  background: #0ba39c;
+  color: #fff;
+  display: inline-block;
+  margin: 15px 0 0;
+  padding: 26px 27px 22px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 5px white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Pacifico';
+}
+.content__buyButton:hover {
+  background: #e16801;
+  transition: 0.5s ease-in-out;
+}

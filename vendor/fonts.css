@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'poller_oneregular';
+  src: url('./fonts/pollerone/pollerone-webfont.eot');
+  src: url('./fonts/pollerone/pollerone-webfont.eot');
+  src: url('./fonts/pollerone/pollerone-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/pollerone/pollerone-webfont.woff') format('woff'),
+    url('./fonts/pollerone/pollerone-webfont.ttf') format('truetype'),
+    url('./fonts/pollerone/pollerone-webfont.svg#poller_oneregular')
+      format('svg');
+}
+@font-face {
+  font-family: 'leckerli_oneregular';
+  src: url('./fonts/leckerlione/leckerlione-regular-webfont.eot');
+  src: url('./fonts/leckerlione/leckerlione-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/leckerlione/leckerlione-regular-webfont.woff') format('woff'),
+    url('./fonts/leckerlione/leckerlione-regular-webfont.ttf')
+      format('truetype'),
+    url('./fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular')
+      format('svg');
+}
+/* cuprum-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-regular.svg#Cuprum')
+      format('svg'); /* Legacy iOS */
+}
+/* cuprum-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.woff') format('woff'),
+    /* Modern Browsers */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/cuprum/cuprum-v18-latin_cyrillic-700.svg#Cuprum')
+      format('svg'); /* Legacy iOS */
+}
+
+/* pacifico-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+
+  src: url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/pacifico/pacifico-v21-latin_cyrillic-regular.svg#Pacifico')
+      format('svg'); /* Legacy iOS */
+}

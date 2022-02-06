@@ -1,5 +1,5 @@
 /* кнопка открывает попап*/
-const buyButton = document.querySelector('.featured__buyButton');
+const buyButton = document.querySelector('.content__buyButton');
 /* затемнение на попап */
 const popup = document.querySelectorAll('.popup');
 

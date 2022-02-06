@@ -1,13 +1,11 @@
 .nav__item-link {
   color: #252525;
   margin: 0;
-  padding: 0 0 3px;
+  padding: 6px 0 6px 0;
   display: inline-block;
-  font-family: 'Arial Black', Gadget, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   text-decoration: none;
-  /* text-transform: uppercase; */
 }
 .nav__item-link:hover {
-  color: #e16801;
+  color: #0ba39c;
 }

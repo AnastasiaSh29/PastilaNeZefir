@@ -4,5 +4,6 @@
   text-align: left;
   display: none;
   position: absolute;
-  width: 150px;
+  max-width: 250px;
+  z-index: 9999;
 }

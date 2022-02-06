@@ -1,0 +1,11 @@
+.categories__link {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
+}

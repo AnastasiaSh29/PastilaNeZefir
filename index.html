@@ -2,14 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ПастилаНеЗефир</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
+
   <body class="body root">
     <header class="header">
-      <h1 class="header__title">Пастила на любой вкус</h1>
+      <h1 class="header__title">ПастилаНеЗефир</h1>
+      <h2 class="header__subTitle">Пастила на любой вкус</h2>
 
       <!-- Навигация -->
       <nav class="nav">
@@ -55,22 +57,21 @@
     </header>
 
     <main class="main">
-      <section class="featured">
-        <img class="featured__img" src="images/main3.jpg" alt="" />
-        <div class="featured__div">
-          <h2 class="featured__header">Преимущества</h2>
-          <p><span class="featured__span">Полезно</span></p>
-          <p><span class="featured__span">Натурально</span></p>
-          <p><span class="featured__span">Без добавок</span></p>
+      <section class="content">
+        <img class="content__img" src="images/main3.jpg" alt="" />
+        <div class="content__div">
+          <h2 class="content__header">Преимущества</h2>
+          <p><span class="content__span">Полезно</span></p>
+          <p><span class="content__span">Натурально</span></p>
+          <p><span class="content__span">Без добавок</span></p>
           <p>
-            <!-- <a class="featured__delivery" href="dostavka.html" class="more">Купить</a> -->
-            <button class="featured__buyButton" type="button">Купить</button>
+            <button class="content__buyButton" type="button">Купить</button>
           </p>
         </div>
 
         <ul class="categories">
           <li class="categories__item">
-            <a class="categories__link" href="pastila.html">
+            <a class="categories__link" href="#" target="_blank">
               <img
                 data-call="pastilaTip"
                 class="categories__link-img"
@@ -83,7 +84,7 @@
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="frips.html">
+            <a class="categories__link" href="#" target="_blank">
               <img
                 data-call="fripsTip"
                 data-call="circle"
@@ -95,7 +96,7 @@
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="sets.html">
+            <a class="categories__link" href="#" target="_blank">
               <img
                 data-call="setsTip"
                 class="categories__link-img"
@@ -108,32 +109,55 @@
         </ul>
       </section>
     </main>
-
-    <div class="slider">
-      <button class="slider__button-left" onclick="slider.left();">&lt;</button>
-      <div id="slider__src"></div>
-      <button class="slider__button-right" onclick="slider.right();">
-        &gt;
-      </button>
+    <div class="wrapper">
+      <div class="slider">
+        <div class="slider__block">
+          <img src="/images/mix1.jpg" alt="" class="slider__img" />
+          <img src="/images/mix2.jpg" alt="" class="slider__img" />
+          <img src="/images/mix3.jpg" alt="" class="slider__img" />
+          <img src="/images/mix4.jpg" alt="" class="slider__img" />
+          <img src="/images/mix5.jpg" alt="" class="slider__img" />
+          <img src="/images/mix6.jpg" alt="" class="slider__img" />
+          <img src="/images/mix7.jpg" alt="" class="slider__img" />
+          <img src="/images/mix8.jpg" alt="" class="slider__img" />
+          <img src="/images/mix9.jpg" alt="" class="slider__img" />
+        </div>
+        <div class="slider__button-container">
+          <button class="slider__button-prev slider__nav" data-dir="prev">
+            &gt;
+          </button>
+          <button class="slider__button-next slider__nav" data-dir="next">
+            &lt;
+          </button>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
       <div class="footer__div">
         <p class="footer__text">
-          &copy; 2022 Магазин Домашней пастилы и фрипсов
+          &copy; 2022 МАГАЗИН ДОМАШНЕЙ ПАСТИЛЫ И ФРИПСОВ
         </p>
-        <ul class="footer__list">
+        <ul class="footer__links">
           <li class="footer__item">
-            <a class="footer__item-link" href="" id="instagram">instagram</a>
+            <a class="footer__link" target="_blank" href="#"
+              ><img src="./images/instagram-b.png"
+            /></a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="" id="facebook">facebook</a>
+            <a class="footer__link" target="_blank" href="#"
+              ><img src="./images/facebook-b.png"
+            /></a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="" id="vkontakte">vkontakte</a>
+            <a class="footer__link" target="_blank" href="#"
+              ><img src="./images/vk-b.png"
+            /></a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="" id="whatsup">whatsup</a>
+            <a class="footer__link" target="_blank" href="#"
+              ><img src="./images/whatsapp-b.png"
+            /></a>
           </li>
         </ul>
       </div>
@@ -223,13 +247,11 @@
       </form>
     </section>
 
-    <!-- Slider -->
-    <!-- <script></script> -->
-    <!-- Подсказка на js -->
-    <!-- <script src="/scripts/tips.js"></script> -->
-
     <script src="/scripts/menu.js"></script>
+    <script src="/scripts/slider.js"></script>
     <script src="/scripts/popup.js"></script>
     <script src="/scripts/validate.js"></script>
+    <!-- Подсказка на js -->
+    <!-- <script src="/scripts/tips.js"></script> -->
   </body>
 </html>
